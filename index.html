@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OpenLayers with Google Maps Satellite View</title>
+    <title>Codewords</title>
     <link rel="stylesheet" href="https://grid.plus.codes/openlayers/ol.css" type="text/css">
     <script src="https://grid.plus.codes/openlayers/ol.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
@@ -22,7 +22,7 @@
         bottom: 10px;
         left: 25%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 0, 0, 0.8);
         padding: 10px;
         border-radius: 5px;
         font-size: 16px;
@@ -30,18 +30,19 @@
       #loc_vector_code {
         position: absolute;
         bottom: 10px;
-        left: 50%;
+        left: 75%;
         transform: translateX(-50%);
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 0, 0, 0.8);
         padding: 10px;
         border-radius: 5px;
         font-size: 16px;
       }
+      
       .map-type-buttons {
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 255, 0, 0.8);
         padding: 10px;
         border-radius: 5px;
       }
@@ -53,8 +54,8 @@
     </style>
   </head>
 <body>
-    <div style="position: relative;">
-        <div id="ol_vector_xyz" class="map"></div>
+    <div style="position: relative;height: 100%;">
+        <div id="ol_vector_xyz" class="map" style="height: 100%; width: 100%;flex: 1;"></div>
         <div id="ol_vector_code">Click a cell to get Plus Code</div>
         <div class="map-type-buttons">
             <button onclick="switchMapType('satellite')">Satellite</button>
@@ -65,14 +66,14 @@
     <div style="position: relative;">
         <div id="loc_vector_code">Click a cell to get words Code</div>
     </div>
-    <div id="map" style="height: 100vh; width: 100vw;"></div>
+    <div id="map" style="height: 100%; width: 100%;"></div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
         function initMap() {
             const map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: -35.987, lng: 130.651 },
-                zoom: 21,
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 6,
                 mapTypeId: 'roadmap',
                 mapTypeControl: true,
                 zoomControl: true,
