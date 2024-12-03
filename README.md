@@ -1,5 +1,6 @@
 # codewords (beta)
-Geo hash with words - 3 words to represent a unique geographical location
+Geohash with words - 3 words to represent a unique geographical location \
+Check the demo out [here](https://sanjomo.github.io/codewords/)
 
 
 ## Action Items
