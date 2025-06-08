@@ -16,7 +16,7 @@ Check the demo out [here](https://sanjomo.github.io/codewords/)
 - [ ] Algorithmic enhancement
 - [ ] UI enchancement
 - [ ] English - EN - word list cleanup
-- [ ] Add other language support
+- [ ] Add other languages support
 - [ ] GA release
 - [ ] API support
 - [ ] Enterprise & offline support
